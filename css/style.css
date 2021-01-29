@@ -1,0 +1,375 @@
+.no-gutters {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.main__topMargin {
+  margin-top: 200px;
+  margin-bottom: 150px;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+p {
+  font-family: "Nunito Sans", sans-serif;
+  color: #36353a;
+}
+
+.p_modal {
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+#arteJapones {
+  color: magenta;
+  font-weight: bold;
+}
+
+a {
+  color: whitesmoke;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: magenta;
+  letter-spacing: 2px;
+}
+
+a:active {
+  color: yellow;
+}
+
+h1 {
+  font-family: "Nunito Sans", sans-serif;
+  color: #36353a;
+  font-weight: bold;
+  text-align: center;
+  font-size: 50px;
+}
+
+h1:hover {
+  -webkit-animation-name: title_dark;
+          animation-name: title_dark;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+h2 {
+  font-family: "Nunito Sans", sans-serif;
+  color: whitesmoke;
+  font-weight: bold;
+  text-align: center;
+  font-size: 50px;
+}
+
+h2:hover {
+  -webkit-animation-name: title_light;
+          animation-name: title_light;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+h3 {
+  font-family: "Nunito Sans", sans-serif;
+  color: #36353a;
+  font-weight: bold;
+  text-align: center;
+  font-size: 25px;
+  padding-top: 20px;
+}
+
+h3:hover {
+  -webkit-animation-name: title_dark;
+          animation-name: title_dark;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+@-webkit-keyframes title_dark {
+  0% {
+    color: #36353a;
+  }
+  50% {
+    color: magenta;
+  }
+  100% {
+    color: #36353a;
+  }
+}
+
+@keyframes title_dark {
+  0% {
+    color: #36353a;
+  }
+  50% {
+    color: magenta;
+  }
+  100% {
+    color: #36353a;
+  }
+}
+
+@-webkit-keyframes title_light {
+  0% {
+    color: whitesmoke;
+  }
+  50% {
+    color: magenta;
+  }
+  100% {
+    color: whitesmoke;
+  }
+}
+
+@keyframes title_light {
+  0% {
+    color: whitesmoke;
+  }
+  50% {
+    color: magenta;
+  }
+  100% {
+    color: whitesmoke;
+  }
+}
+
+/*NAVBAR*/
+.navbar {
+  font-family: "Nunito Sans", sans-serif;
+  color: whitesmoke;
+  background-image: -webkit-gradient(linear, right top, left top, from(black), to(#36353a));
+  background-image: linear-gradient(to left, black, #36353a);
+  font-weight: bold;
+}
+
+.navbar-toggler-icon {
+  color: whitesmoke;
+}
+
+/*FIN NAVBAR*/
+/*FOOTER*/
+footer {
+  color: whitesmoke;
+  background-image: -webkit-gradient(linear, right top, left top, from(black), to(#36353a));
+  background-image: linear-gradient(to left, black, #36353a);
+  font-family: "Nunito Sans", sans-serif;
+  height: 7vh;
+  padding-left: 1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer a {
+  margin-right: 1vw;
+}
+
+footer #derechos {
+  color: whitesmoke;
+  margin: 0;
+}
+
+/*FIN FOOTER*/
+/*CAROUSEL*/
+#carousel_front {
+  padding-top: 60px;
+}
+
+/*FIN CAROUSEL*/
+/*NOSOTROS*/
+#nosotros {
+  padding-bottom: 2rem;
+}
+
+.nosotros__logo {
+  padding-top: 5vh;
+  padding-bottom: 3vh;
+}
+
+.nosotros__imagen {
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  .nosotros__imagen {
+    text-align: left;
+  }
+  .nosotros__imagen .nosotros__image__element {
+    width: 20%;
+  }
+}
+
+.nosotros__parrafo {
+  text-align: center;
+  padding: 2rem 2rem !important;
+}
+
+@media (min-width: 576px) {
+  .nosotros__parrafo {
+    text-align: right;
+    padding-left: 10rem !important;
+    padding-top: 0rem !important;
+  }
+}
+
+/*FIN ABOUT US*/
+/*EVENTOS*/
+#eventos {
+  padding: 100px 0px;
+  margin-top: 80px;
+  background-color: #36353a;
+}
+
+#eventos__parrafo {
+  font-family: "Nunito Sans", sans-serif;
+  color: whitesmoke;
+  text-align: center;
+  font-weight: bold;
+}
+
+.card {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 250px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin: 10px;
+  font-family: "Nunito Sans", sans-serif;
+  color: whitesmoke;
+}
+
+.fecha {
+  color: #36353a;
+  font-size: 20px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  font-family: "Nunito Sans", sans-serif;
+  color: whitesmoke;
+  background-color: #36353a;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  background-color: magenta;
+}
+
+.card button:active {
+  background-color: yellow;
+  border: none;
+}
+
+.card button:focus {
+  border: none;
+}
+
+/*FIN EVENTOS*/
+/*CONTACTO*/
+.eventos {
+  color: #36353a;
+  background-color: magenta;
+}
+
+fieldset {
+  background-image: -webkit-gradient(linear, right top, left top, from(black), to(#36353a));
+  background-image: linear-gradient(to left, black, #36353a);
+  color: magenta;
+  text-align: center;
+  border: none;
+  border-radius: 0;
+  width: 300px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
+  padding: 30px;
+}
+
+.button {
+  background-color: magenta;
+  border: none;
+  font-family: "Nunito Sans", sans-serif;
+  letter-spacing: 1px;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.button:hover {
+  background-color: yellow;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: magenta;
+  opacity: 1;
+}
+
+.form-control:-ms-input-placeholder {
+  color: magenta;
+  opacity: 1;
+}
+
+.form-control::-ms-input-placeholder {
+  color: magenta;
+  opacity: 1;
+}
+
+.form-control::placeholder {
+  color: magenta;
+  opacity: 1;
+}
+
+.form-control {
+  color: magenta;
+  border: none;
+  border-radius: 0;
+}
+
+.form-control:focus {
+  color: magenta;
+}
+
+option {
+  color: magenta;
+}
+
+/*FIN CONTACTO*/
+/*# sourceMappingURL=style.css.map */

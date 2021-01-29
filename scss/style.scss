@@ -1,0 +1,312 @@
+$main-dark: #36353a;
+$main-light: whitesmoke;
+$accent1: yellow;
+$accent2: magenta;
+$gradient1: linear-gradient(to left, black, $main-dark);
+$font: 'Nunito Sans', sans-serif;
+$font-sizes: ("small": 25px, "large": 50px);
+
+@mixin font_and_color {
+    font-family: $font;
+    color: $main-dark;
+}
+
+@mixin font_and_color2 {
+    font-family: $font;
+    color: $main-light;
+}
+
+
+.no-gutters{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.main__topMargin{
+    margin-top: 200px;
+    margin-bottom: 150px;
+}
+
+body{
+    background-color: $main-light;
+}
+
+p{
+    @include font_and_color;
+}
+
+.p_modal{
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+#arteJapones{
+    color: $accent2;
+    font-weight: bold;
+}
+
+a{
+    color: $main-light;
+    text-decoration: none;
+    transition: 0.3s;
+    &:hover{
+        color: $accent2;
+        letter-spacing: 2px;
+    }
+    &:active{
+        color: $accent1;
+    }
+}
+
+a h3{
+    @include font_and_color;
+    font-weight: bold;
+    text-align: center;
+    font-size: map-get($map: $font-sizes, $key: small);
+    padding-top: 20px;
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+        animation-name: title_dark;
+        animation-iteration-count: initial;
+        animation-timing-function: ease-in;
+        animation-duration: 0.5s;
+        animation-delay: 0s;
+    }
+}
+
+h1{
+    @include font_and_color;
+    font-weight: bold;
+    text-align: center;
+    font-size: map-get($map: $font-sizes, $key: large);
+    &:hover{
+        animation-name: title_dark;
+        animation-iteration-count: initial;
+        animation-timing-function: ease-in;
+        animation-duration: 0.5s;
+        animation-delay: 0s;
+    }
+}
+
+h2{
+    @include font_and_color2;
+    font-weight: bold;
+    text-align: center;
+    font-size: map-get($map: $font-sizes, $key: large);
+    &:hover{
+        animation-name: title_light;
+        animation-iteration-count: initial;
+        animation-timing-function: ease-in;
+        animation-duration: 0.5s;
+        animation-delay: 0s;
+    }
+}
+
+h3{
+    @include font_and_color;
+    font-weight: bold;
+    text-align: center;
+    font-size: map-get($map: $font-sizes, $key: small);
+    padding-top: 20px;
+    &:hover{
+        animation-name: title_dark;
+        animation-iteration-count: initial;
+        animation-timing-function: ease-in;
+        animation-duration: 0.5s;
+        animation-delay: 0s;
+    }
+}
+
+@keyframes title_dark{
+    0%{color: $main-dark;}
+    50%{color: $accent2;}
+    100%{color: $main-dark;}
+}
+
+@keyframes title_light{
+    0%{color: $main-light;}
+    50%{color: $accent2;}
+    100%{color: $main-light;}
+}
+
+
+/*NAVBAR*/
+.navbar{
+    @include font_and_color2;
+    background-image: $gradient1;
+    font-weight: bold;
+}
+
+.navbar-toggler-icon{
+    color: $main-light;
+}
+/*FIN NAVBAR*/
+
+/*FOOTER*/
+footer{
+    color: $main-light;
+    background-image: $gradient1;
+    font-family: $font;
+    height: 7vh;
+    padding-left: 1vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    a{
+        margin-right: 1vw;
+    }
+    #derechos{
+        color: $main-light;
+        margin: 0;
+    }
+}
+
+/*FIN FOOTER*/
+
+/*CAROUSEL*/
+#carousel_front{
+    padding-top: 60px;
+}
+/*FIN CAROUSEL*/
+
+/*NOSOTROS*/
+#nosotros{
+    padding-bottom: 2rem;
+}
+
+.nosotros__logo{
+    padding-top: 5vh;
+    padding-bottom: 3vh;
+}
+
+.nosotros__imagen{
+    text-align: center;
+}
+
+@media (min-width: 576px) {
+    .nosotros__imagen {
+        text-align: left;
+        .nosotros__image__element{
+            width: 20%;
+        }
+    }
+}
+
+.nosotros__parrafo{
+    text-align: center;
+    padding: 2rem 2rem !important;
+}
+
+@media (min-width: 576px) {
+    .nosotros__parrafo {
+        text-align: right;
+        padding-left: 10rem !important;
+        padding-top: 0rem !important; 
+    }
+}
+
+/*FIN ABOUT US*/
+
+/*EVENTOS*/
+
+#eventos{
+    padding: 100px 0px;
+    margin-top: 80px;
+    background-color: $main-dark;
+}
+
+#eventos__parrafo{
+    @include font_and_color2;
+    text-align: center;
+    font-weight: bold;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 250px;
+    justify-content: center;
+    text-align: center;
+    margin:10px;
+    @include font_and_color2;
+  }
+  
+  .fecha {
+    color: $main-dark;
+    font-size: 20px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    @include font_and_color2;
+    background-color: $main-dark;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    &:hover {
+        background-color: $accent2;
+      }
+    &:active{
+        background-color: $accent1;
+        border: none;
+    }
+    &:focus{
+        border: none;
+    }  
+  }
+/*FIN EVENTOS*/
+
+/*CONTACTO*/
+.eventos{
+    color: $main-dark;
+    background-color: $accent2;
+}
+
+fieldset{
+    background-image: $gradient1;
+    color: $accent2;
+    text-align: center;
+    border: none;
+    border-radius: 0;
+    width: 300px;
+    font-family: $font;
+    font-weight: bold;
+    padding: 30px;
+}
+
+.button{
+    background-color: $accent2;
+    border: none;
+    font-family: $font;
+    letter-spacing: 1px;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 5px;
+    &:hover{
+        background-color: $accent1;
+    }
+
+}
+
+.form-control::placeholder {
+    color: $accent2;
+    opacity: 1;
+}
+
+.form-control {
+    color: $accent2;
+    border: none;
+    border-radius: 0;
+    &:focus{
+        color: $accent2;
+    }
+}
+
+option{
+    color: $accent2;
+}
+/*FIN CONTACTO*/
